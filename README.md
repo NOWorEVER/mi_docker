@@ -41,7 +41,8 @@ DiskGenius【将硬盘格式化为EXT4】自行获取
 
 ​将磁盘连接安装到万兆路由器
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/d07f9c8b-824a-4e3e-b0ab-a2688bac2b19)
-打开小米路由器管理地址，默认为【192.168.31.1】进行登录
+
+打开小米路由器管理地址，默认为【 192.168.31.1 】进行登录
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/7c6abce9-3d8b-46cb-b9f2-696c291f22bf)
 登录后进入【存储功能】，查看磁盘是否成功连接，建议打开USB3.0(不打开也行，看你能不能忍)
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/5fc9c833-53bd-47d1-818a-c248e9e68ba7)
