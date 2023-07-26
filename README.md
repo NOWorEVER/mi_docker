@@ -71,6 +71,7 @@ DiskGenius【将硬盘格式化为EXT4】自行获取
 (其他两个镜像完成全部流程后就会安装成功)
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/ea042e6a-5ed8-4c13-a46c-7d55bf8dc625)
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/46e53f6e-79d7-49a7-9014-1659450dabc4)
+
 专业模式中的挂载路径与Simple-Docker一致。可以重新开一个窗口进行对照复制
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/2399d1bc-bfb3-4389-8edc-58f6c19c812e)
 ​每个人从存储配置不一致，看自己的就行
