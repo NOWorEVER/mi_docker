@@ -1,0 +1,32 @@
+挂载路径
+/mnt/usb-*****/mi_docker/lib/docker/volumes/********/_data
+​<DOWNLOADS>
+/mnt/usb-*******/downloads
+
+
+docker run -d \
+    --name aria2-pro \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    -e PUID=$UID \
+    -e PGID=$GID \
+    -e UMASK_SET=022 \
+    -e RPC_SECRET=<TOKEN> \
+    -e RPC_PORT=6800 \
+    -p 6800:6800 \
+    -e LISTEN_PORT=6888 \
+    -p 6888:6888 \
+    -p 6888:6888/udp \
+    -v <CONFIG>:/config \
+    -v <DOWNLOADS>:/downloads \
+    p3terx/aria2-pro
+
+
+
+
+docker run -d \
+    --name ariang \
+    --log-opt max-size=1m \
+    --restart unless-stopped \
+    -p 6880:6880 \
+    p3terx/ariang
