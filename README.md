@@ -143,9 +143,9 @@ apk add docker-cli
 
  
 
-docker run -d \ 
---name aria2-pro \
---restart unless-stopped \
+docker run -d \
+  --name aria2-pro \
+  --restart unless-stopped \
 --log-opt max-size=1m \
 -e PUID=$UID \
 -e PGID=$GID \
