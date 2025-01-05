@@ -145,46 +145,32 @@ apk add docker-cli
 
 docker run -d \ 
 --name aria2-pro \
-
 --restart unless-stopped \
-
 --log-opt max-size=1m \
-
 -e PUID=$UID \
-
 -e PGID=$GID \
-
 -e UMASK_SET=022 \
-
 -e RPC_SECRET=<TOKEN> \
-
 -e RPC_PORT=6800 \
-
 -p 6800:6800 \
-
 -e LISTEN_PORT=6888 \
-
 -p 6888:6888 \
-
 -p 6888:6888/udp \
-
--v <CONFIG>:/config \
-
--v <DOWNLOADS>:/downloads \
-
+-v 《CONFIG》:/config \
+-v 《DOWNLOADS》:/downloads \
 p3terx/aria2-pro
 
 ​
 
 ​【完成后进行替换<TOKEN>，<CONFIG>，<DOWNLOADS>，替换最终结果没有<>符号】
 
-​<TOKEN>：这个是用户自行设置的密码【123456】【admin】都行
+​《TOKEN》：这个是用户自行设置的密码【123456】【admin】都行
 
-​<CONFIG>：是上方的【挂载路径】，每个人都不一样
+​《CONFIG》：是上方的【挂载路径】，每个人都不一样
 
 ​(我的是/mnt/usb-973c0b10/mi_docker/lib/docker/volumes/8777fecfab9f099a73fd8267a61862a758a426c6dd3cc039dd0e56181098a6b0/_data)
 
-​<DOWNLOADS>：/mnt/usb-*******/downloads，和前面一样查看【挂载路径】，记得查看硬盘中有没有【downloads】这个文件夹，没有的话自己新建一个在磁盘中
+《DOWNLOADS》：/mnt/usb-*******/downloads，和前面一样查看【挂载路径】，记得查看硬盘中有没有【downloads】这个文件夹，没有的话自己新建一个在磁盘中
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/6e59e3e7-3ab8-4dda-b266-f187e4090307)
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/ee3dea97-bf1a-4742-a9e5-816929b9c2c1)
 ![image](https://github.com/NOWorEVER/mi_docker/assets/57054154/27ca8556-df1d-4131-902d-5047966e4a29)
